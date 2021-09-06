@@ -18,4 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[EmployeeController::class,'index']);
 Route::post('import',[EmployeeController::class,'fileImport'])->name('file-import');
 Route::get('export',[EmployeeController::class,'fileExport'])->name('file-export');
+// Route::get('pdf',[PdfController::class,'index'])->name('show-pdf');
+Route::get('pdf/download',[PdfController::class,'filePdf'])->name('download-pdf');
 
