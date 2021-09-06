@@ -8,6 +8,13 @@ php artisan serve
 ## Documentation
 [Documentation](https://laravel.com/docs/8.x/installation)
 
+# Steps after Cloning
+```bash
+Composer install
+copy .env-example .env
+php artisan key:generate
+```
+
 ## Excel package
 ```bash
 composer require maatwebsite/excel
