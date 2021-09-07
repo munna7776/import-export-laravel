@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CarbonController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\PdfController;
 use Illuminate\Support\Facades\Route;
@@ -20,4 +21,7 @@ Route::post('import',[EmployeeController::class,'fileImport'])->name('file-impor
 Route::get('export',[EmployeeController::class,'fileExport'])->name('file-export');
 // Route::get('pdf',[PdfController::class,'index'])->name('show-pdf');
 Route::get('pdf/download',[PdfController::class,'filePdf'])->name('download-pdf');
+
+//Date-Time Routing
+Route::get('/date',[CarbonController::class,'index']);
 
